@@ -1,0 +1,67 @@
+body {
+	background-color: #9cdcdc;
+}
+
+.calendarWrapper {
+	background-image: url("crystal.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	padding-top: 0px;
+}
+
+.door {
+	border: 1px #fff solid;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.15);
+	color: #ffff00;
+	height: 120px;
+	margin-top: 20px;
+
+}
+.door p {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight:bold;
+}
+.adventDoor img {
+	max-height: 250px;
+	width: auto;
+	margin-top: 10px;
+}
+
+.door:hover {
+	color: #fff;
+	background-color: transparent;
+	background-color: rgba(196,254,171,0.15);
+	cursor: pointer;
+}
+
+.adventDoor {
+	padding: 0px;
+}
+
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	//padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		padding: none;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		padding: none;
+	}
+}
