@@ -42,21 +42,41 @@ var images = [
 ]; 
 
 // variable for controlling current day.. Think how many days is left for 24th day..
-var currentday = 24;
+//var currentday = 12;
+var totaldays = new Date();
+//var month = totaldays.getMonth();
+var currentdays = totaldays.getDate();
+
 
 function openDoor(doorid) {
 //if doorid <= currentday then open the door {
-//    
-//}
-	// check if current day is the day passed to the function
-	if (currentday == doorid) {
-		// get door and replace all of its content with image
-		number = document.getElementById("door"+doorid);
-		number.innerHTML = "<img src=\'"+images[doorid]+"\' class=\'img-fluid mx-auto d-block\'>";
-	} else {
-		//if bad security check failed run this code
-		window.location.href = "https://ak6.picdn.net/shutterstock/videos/1035943766/thumb/3.jpg";
-	}
+//  if (currentdays == doorid - 1) {
+      //return false;
+//  }
+//    else if (doorid > currentdays) {
+//       return false; 
+//    }
+//    else if (doorid < totaldays.getDate()) {
+//       return true; 
+//    }
+        
+    //if (month < 10) //{
+        
+      //  return false;
+    //}
+    //else if (currentdays ) {
+        
+    //}
 
+
+	// check if current day is the day passed to the function
+	if (currentdays == doorid) {
+		number = document.getElementById(doorid);
+		number.innerHTML = "<img src=\'"+images[doorid]+"\' class=\'img-fluid mx-auto d-block\'>";
+	}
+    if (doorid < currentdays) {
+        number1 = document.getElementById(doorid);
+        number1.innerHTML = "<img src=\'"+images[doorid]+"\' class=\'img-fluid mx-auto d-block\'>";
+    }
 }
 

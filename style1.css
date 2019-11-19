@@ -3,7 +3,7 @@ body {
 }
 
 .calendarWrapper {
-	background-image: url("crystal.jpg");
+	background-image: url("xmastree.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -20,9 +20,11 @@ body {
 
 }
 .door p {
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 45px;
     font-weight:bold;
+    color: red;
+    font-family: 'Yellowtail', cursive;
 }
 .adventDoor img {
 	max-height: 250px;

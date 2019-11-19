@@ -1,208 +1,203 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calendar</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="style1.css">
-	<script type="text/javascript" src="scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
+
 <body>
 
-	<div class="wrapper">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 calendarWrapper">
-					<div class="row">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 calendarWrapper">
+                    <div class="row">
 
-						<!-- copy paste this part 24 times. Remember to change the variables -->
-<!--     12 max, offset = puolet tosta col-md- luvusta, col-md on tavallinen monitori
+                        <!-- copy paste this part 24 times. Remember to change the variables -->
+                        <!--     12 max, offset = puolet tosta col-md- luvusta, col-md on tavallinen monitori
             -->
-						<div class="col-md-3 adventDoor" id="door1" onclick="openDoor(1)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                
-									<p style="text-align: center;" id="door1number">1</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door2" onclick="openDoor(2)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door2number">2</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door3" onclick="openDoor(3)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door3number">3</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door4" onclick="openDoor(4)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door2number">4</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door5" onclick="openDoor(5)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door5number">2</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door6" onclick="openDoor(6)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door6number">6</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door7" onclick="openDoor(7)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door7number">7</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door8" onclick="openDoor(8)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door8number">8</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door9" onclick="openDoor(9)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door9number">9</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door10" onclick="openDoor(10)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door10number">10</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door11" onclick="openDoor(11)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door11number">11</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door12" onclick="openDoor(12)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door12number">12</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door13" onclick="openDoor(13)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door13number">13</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door14" onclick="openDoor(14)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door14number">14</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door15" onclick="openDoor(15)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door15number">15</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door16" onclick="openDoor(16)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door16number">16</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door16" onclick="openDoor(16)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door16number">16</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door17" onclick="openDoor(17)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door17number">17</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door18" onclick="openDoor(18)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door18number">18</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door19" onclick="openDoor(19)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door19number">19</p>
-								</div>
-							</div>
-						</div>
-                          <div class="col-md-3 adventDoor" id="door20" onclick="openDoor(20)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door20number">20</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door21" onclick="openDoor(21)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door21number">21</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door22" onclick="openDoor(22)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door22number">22</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door23" onclick="openDoor(23)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door23number">23</p>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-3 adventDoor" id="door24" onclick="openDoor(24)">
-							<div class="row">
-								<div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-									<p style="text-align: center;" id="door24number">24</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="col-md-3 adventDoor" id="23" onclick="openDoor(23)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
 
-</body>
-</html>
+                                    <p style="text-align: center;" id="door5number">23</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="6" onclick="openDoor(6)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door6number">6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="9" onclick="openDoor(9)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door9number">9</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="4" onclick="openDoor(4)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door4number">4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="2" onclick="openDoor(2)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door2number">2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="7" onclick="openDoor(7)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door7number">7</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="10" onclick="openDoor(10)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door10number">10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="20" onclick="openDoor(20)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door20number">20</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="22" onclick="openDoor(22)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door22number">22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="11" onclick="openDoor(11)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door11number">11</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="24" onclick="openDoor(24)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door13number">24</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="15" onclick="openDoor(15)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door12number">15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="17" onclick="openDoor(17)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door13number">17</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="19" onclick="openDoor(19)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door14number">19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="21" onclick="openDoor(21)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door15number">21</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="3" onclick="openDoor(3)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door16number">3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="16" onclick="openDoor(16)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door16number">16</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="1" onclick="openDoor(1)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door1number">1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="18" onclick="openDoor(18)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door18number">18</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="12" onclick="openDoor(12)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door12number">12</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="8" onclick="openDoor(8)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door20number">8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="14" onclick="openDoor(14)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door22number">14</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="5" onclick="openDoor(5)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door23number">5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 adventDoor" id="13" onclick="openDoor(13)">
+                            <div class="row">
+                                <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
+                                    <p style="text-align: center;" id="door24number">13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>
