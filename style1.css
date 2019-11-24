@@ -9,13 +9,19 @@ body {
 	height: 100vh;
 	padding-top: 0px;
 }
-
+.player {
+    
+}
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+.lockDoors {
+    background-color: transparent;
+	background-color: rgba(196,254,171,0.15);
 }
 
 .door {
@@ -35,7 +41,7 @@ body {
     font-family: 'Yellowtail', cursive;
 }
 .adventDoor img {
-	max-height: 250px;
+	max-height: 250px; /*250px tai 120 px*/
 	width: auto;
 	margin-top: 10px;
 }

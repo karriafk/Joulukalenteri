@@ -1,5 +1,16 @@
-
-
+//var currentday = 12;
+var totaldays = new Date();
+//var month = totaldays.getMonth();
+var currentdays = totaldays.getDate();
+var currentday = 10;
+var i =0;
+while (i < 24) {
+    i++;
+    if (i > currentday) {
+        document.getElementById(`door${i}number`).style.backgroundColor = "green";
+        document.getElementById(`door${i}number`).style.opacity ="0.5";
+    }
+}
 // this list has all the images for the doors.
 // what image is displayed is determied by its position in array
 var images = [
@@ -29,42 +40,36 @@ var images = [
 "https://cdn.pixabay.com/photo/2013/07/18/20/26/boat-164989_960_720.jpg" // luukku 23
 ]; 
 
-// variable for controlling current day.. Think how many days is left for 24th day..
-//var currentday = 12;
-var totaldays = new Date();
-//var month = totaldays.getMonth();
-var currentdays = totaldays.getDate();
 
 
-function openDoor(doorid) {
-//if doorid <= currentday then open the door {
-//  if (currentdays == doorid - 1) {
-      //return false;
-//  }
-//    else if (doorid > currentdays) {
-//       return false; 
-//    }
-//    else if (doorid < totaldays.getDate()) {
-//       return true; 
-//    }
-        
-    //if (month < 10) //{
-        
-      //  return false;
-    //}
-    //else if (currentdays ) {
-        
-    //}
 
 
-	// check if current day is the day passed to the function
-	if (currentdays == doorid) {
-		number = document.getElementById(doorid);
-		number.innerHTML = "<img src=\'"+images[doorid]+"\' class=\'img-fluid mx-auto d-block\'>";
-	}
-    if (doorid < currentdays) {
-        number1 = document.getElementById(doorid);
-        number1.innerHTML = "<img src=\'"+images[doorid]+"\' class=\'img-fluid mx-auto d-block\'>";
-    }
+function openDoor(doorid) {    
+    var i; 
+    for (i= 0; i <= currentday; i++)
+        {
+            if (doorid <= currentday){
+            number = document.getElementById(doorid);
+            number.innerHTML = "<img src=\'" + images[(doorid - 1)] + "\' class=\'img-fluid mx-auto d-block\'>";
+            }
+            
+        }
 }
 
+function onYouTubePlayerAPIReady() {
+  var player = new YT.Player('player', {
+     videoId: 'Null', // this is the id of the video at youtube (the stuff after "?v=")
+      loop: true,
+      events: {
+          onReady: function (e) {
+              
+              e.target.playVideo();
+          },
+          onStateChange: function (event) {
+if (event.data == 0) {
+                e.target.playVideo(); //repeats the music
+              }
+          }
+      }
+  });
+}
