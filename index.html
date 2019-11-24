@@ -11,13 +11,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="style1.css">
-    <script type="text/javascript" src="scripts/script.js"></script>
+    
 </head>
 
 <body>
+
 <video autoplay muted loop id="myVideo">
   <source src="snowfallBackground.mp4" type="video/mp4">
 </video>
+    <div id="LockedDoors">
+</div>
+ <script src="http://www.youtube.com/player_api"></script>  
+    <div id="player" style="position: absolute; top: -9999px; left: -9999px;"></div>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -31,7 +36,7 @@
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
 
-                                    <p style="text-align: center;" id="door5number">23</p>
+                                    <p style="text-align: center;" id="door23number">23</p>
                                 </div>
                             </div>
                         </div>
@@ -101,42 +106,42 @@
                         <div class="col-md-3 adventDoor" id="24" onclick="openDoor(24)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door13number">24</p>
+                                    <p style="text-align: center;" id="door24number">24</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 adventDoor" id="15" onclick="openDoor(15)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door12number">15</p>
+                                    <p style="text-align: center;" id="door15number">15</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 adventDoor" id="17" onclick="openDoor(17)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door13number">17</p>
+                                    <p style="text-align: center;" id="door17number">17</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 adventDoor" id="19" onclick="openDoor(19)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door14number">19</p>
+                                    <p style="text-align: center;" id="door19number">19</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 adventDoor" id="21" onclick="openDoor(21)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door15number">21</p>
+                                    <p style="text-align: center;" id="door21number">21</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 adventDoor" id="3" onclick="openDoor(3)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door16number">3</p>
+                                    <p style="text-align: center;" id="door3number">3</p>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +176,7 @@
                         <div class="col-md-3 adventDoor" id="8" onclick="openDoor(8)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door20number">8</p>
+                                    <p style="text-align: center;" id="door8number">8</p>
                                 </div>
                             </div>
                         </div>
@@ -185,14 +190,14 @@
                         <div class="col-md-3 adventDoor" id="5" onclick="openDoor(5)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door23number">5</p>
+                                    <p style="text-align: center;" id="door5number">5</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 adventDoor" id="13" onclick="openDoor(13)">
                             <div class="row">
                                 <div class="offset-md-1 offset-lg-1 col-md-10 col-lg-10 door">
-                                    <p style="text-align: center;" id="door24number">13</p>
+                                    <p style="text-align: center;" id="door13number">13</p>
                                 </div>
                             </div>
                         </div>
@@ -202,4 +207,6 @@
         </div>
     </div>
 
-</body></html>
+</body>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</html>
