@@ -41,7 +41,7 @@ body {
     font-family: 'Yellowtail', cursive;
 }
 .adventDoor img {
-	max-height: 120px;
+	max-height: 120px; /*250px normi tai 120px pieni*/
 	width: auto;
 	margin-top: 10px;
 }
