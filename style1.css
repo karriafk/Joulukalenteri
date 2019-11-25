@@ -2,16 +2,15 @@ body {
 	background-color: #9cdcdc;
 }
 
-.calendarWrapper {
-	//background-image: url("xmastree.jpg");
+/*.calendarWrapper {
+	background-image: url("xmastree.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
 	padding-top: 0px;
 }
-.player {
-    
-}
+*/
+
 #myVideo {
   position: fixed;
   right: 0;
