@@ -2,26 +2,19 @@ body {
 	background-color: #9cdcdc;
 }
 
-.calendarWrapper {
-	//background-image: url("xmastree.jpg");
+/*.calendarWrapper {
+	background-image: url("xmastree.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
 	padding-top: 0px;
-}
-.player {
-    
-}
+}*/
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-}
-.lockDoors {
-    background-color: transparent;
-	background-color: rgba(196,254,171,0.15);
 }
 
 .door {
@@ -61,7 +54,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	//padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
