@@ -23,7 +23,7 @@ function onYouTubePlayerAPIReady() {
 }
 while (i < 24) {
     i++;
-    if (i > currentdays) {
+    if (i > currentday) {
         document.getElementById(`door${i}number`).style.backgroundColor = "green";
         document.getElementById(`door${i}number`).style.opacity = "0.5";
         document.getElementById(`door${i}number`).style.borderRadius = "5px";
@@ -64,8 +64,8 @@ var images = [
 
 function openDoor(doorid) {
     var i;
-    for (i = 0; i <= currentdays; i++) {
-        if (doorid <= currentdays) {
+    for (i = 0; i <= currentday; i++) {
+        if (doorid <= currentday) {
             number = document.getElementById(doorid);
             number.innerHTML = "<img src=\'" + images[(doorid - 1)] + "\' class=\'img-fluid mx-auto d-block\'>";
         }
