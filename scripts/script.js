@@ -2,7 +2,7 @@ var totaldays = new Date();
 var currentdays = totaldays.getDate();
 var currentday = 10;
 var i = 0;
-
+//console.log(currentdays);
 function onYouTubePlayerAPIReady() {
     var player = new YT.Player('player', {
         videoId: '9P0z8TQM8B8', // this is the id of the video at youtube (the stuff after "?v=")
@@ -23,7 +23,7 @@ function onYouTubePlayerAPIReady() {
 }
 while (i < 24) {
     i++;
-    if (i > currentday) {
+    if (i > currentdays) {
         document.getElementById(`door${i}number`).style.backgroundColor = "green";
         document.getElementById(`door${i}number`).style.opacity = "0.5";
         document.getElementById(`door${i}number`).style.borderRadius = "5px";
@@ -64,11 +64,12 @@ var images = [
 
 function openDoor(doorid) {
     var i;
-    for (i = 0; i <= currentday; i++) {
-        if (doorid <= currentday) {
+    for (i = 0; i <= currentdays; i++) {
+        if (doorid <= currentdays) {
             number = document.getElementById(doorid);
             number.innerHTML = "<img src=\'" + images[(doorid - 1)] + "\' class=\'img-fluid mx-auto d-block\'>";
         }
 
     }
+    
 }
